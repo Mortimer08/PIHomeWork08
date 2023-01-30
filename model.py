@@ -42,7 +42,6 @@ def add_grade(local_subject: str, local_student: str, local_grade: str):
 def write_db(current_class_name: str):
     global class_data
     current_file_name = current_class_name+'.txt'
-    # current_file_name = '1.txt'
     path = Path(uni_path, current_file_name)
     with open(path, 'w', encoding='UTF-8') as file:
         file.write('#\n')
